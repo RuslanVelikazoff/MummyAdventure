@@ -42,6 +42,7 @@ public class MenuController : MonoBehaviour
         effectsSlider.value = effectVolume;        
         float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
         musicSlider.value = musicVolume;
+        audioSource.volume = musicVolume;
         int difficult = PlayerPrefs.GetInt("difficult");
         switch (difficult)
         {
